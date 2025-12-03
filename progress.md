@@ -1,7 +1,4 @@
 # SiLKiE Development Roadmap & Progress
-*A simple, public-friendly tracker of what’s done, what’s in progress, and what’s coming next.*
-
-This document tracks SiLKiE’s development journey at a high level. It includes real progress already completed.
 
 ---
 
