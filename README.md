@@ -82,7 +82,6 @@ on my [profile page](https://github.com/CGGrimsley).
 Near-term work is listed in [progress.md](progress.md). The headline items:
 
 - Expanded account self-service
-- Route-level code splitting to cut first-load weight
 - Broader end-to-end test coverage
 - Continued mobile polish
 

@@ -198,13 +198,11 @@ This is where the work currently sits. Most of it is unglamorous.
 
 - [x] Mobile pass: touch targets, safe-area insets, overflow
 - [x] Accessibility pass: contrast, focus indicators, reduced-motion support
-- [x] Performance: bundle splitting, lazy-loaded heavy dependencies, polling that
-      pauses on hidden tabs
+- [x] Performance: route-level code splitting, a long-lived vendor chunk,
+      lazy-loaded heavy dependencies, polling that pauses on hidden tabs
 - [x] Security headers and transport hardening
 - [ ] Expanded account self-service, including data export
-- [ ] Route-level code splitting
 - [ ] Additional signup safeguards
-- [ ] Global exception handler
 
 ---
 
