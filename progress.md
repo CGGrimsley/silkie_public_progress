@@ -201,8 +201,8 @@ This is where the work currently sits. Most of it is unglamorous.
 - [x] Performance: route-level code splitting, a long-lived vendor chunk,
       lazy-loaded heavy dependencies, polling that pauses on hidden tabs
 - [x] Security headers and transport hardening
-- [ ] Expanded account self-service, including data export
-- [ ] Additional signup safeguards
+- [x] Self-serve account data export
+- [x] Affirmative consent and age attestation at signup
 
 ---
 

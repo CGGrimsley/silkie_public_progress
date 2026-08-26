@@ -81,9 +81,9 @@ on my [profile page](https://github.com/CGGrimsley).
 
 Near-term work is listed in [progress.md](progress.md). The headline items:
 
-- Expanded account self-service
 - Broader end-to-end test coverage
 - Continued mobile polish
+- Opening registration beyond the beta cap
 
 ---
 
