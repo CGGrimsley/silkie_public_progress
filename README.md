@@ -1,74 +1,99 @@
-# SiLKiE — Standardized List for Kit & Equipment  
-*A clean, modern application for building organized lists and managing gear.*
+# SiLKiE — Standardized List for Kit & Equipment
 
-SiLKiE is a project I'm actively developing that helps users create structured lists, plans, and equipment inventories. It’s designed for anything from training events to outdoor trips to personal readiness — anywhere a clear, organized checklist or gear list is helpful.
+*Inventory, loadouts and SOPs for people who keep gear ready.*
 
-This repository exists purely to **share my development progress** with friends, collaborators, and anyone interested in following along. It contains no sensitive code, just high-level updates and milestone tracking.
+**SiLKiE is live in beta at [silkie.io](https://silkie.io).**
 
----
+SiLKiE started as a checklist builder and grew into a full application for
+tracking what you own, building repeatable loadouts, and writing the standard
+operating procedures that go with them. It's for shooters, campers,
+preparedness-minded households, and anyone whose packing list currently lives
+across four notes apps and a group chat.
 
-## 🚀 Project Overview
-
-SiLKiE focuses on:
-
-- A guided builder for structured SOPs and checklists  
-- An interactive wizard for creating personalized equipment inventories  
-- A clean modern interface  
-- Easy organization of gear, kits, and items  
-- Export options for printing or sharing  
-
-The goal is to make planning and gear management simple, intuitive, and reliable.
+This repository is a **public progress tracker**, not the source code. The
+application itself is private; this exists so friends, collaborators and anyone
+curious can follow along without me exposing the codebase.
 
 ---
 
-## 🧭 Track My Progress
+## 🧭 Where the project is
 
-All ongoing development progress, plans, and completed milestones are tracked in:  
-👉 **[`PROGRESS.md`](PROGRESS.md)**
+Development began December 2025. The application is deployed, in beta, and
+taking real users.
 
-This includes:
+| Area | State |
+| :--- | :--- |
+| Backend API | 🟢 Live |
+| Web app | 🟢 Live |
+| Accounts & sign-in | 🟢 Live |
+| Inventory & wizard | 🟢 Live |
+| SOP builder & PDF export | 🟢 Live |
+| Events | 🟢 Live |
+| Community features | 🟢 Live |
+| Subscriptions | 🟢 Live |
+| Beta programme | 🟢 Open |
+| Mobile apps | ⚪ Not started |
 
-- What phase of development I'm currently in  
-- Which tasks are done  
-- What’s being worked on next  
-- Long-term roadmap items  
-
-You can visit anytime to see how far along the project is.
-
----
-
-## 🧩 Core Features (High-Level)
-
-### ✔ SOP / Checklist Builder  
-Helps create clean, structured lists with sections and items.
-
-### ✔ Inventory Setup  
-Guides users through building organized gear or equipment lists.
-
-### ✔ User-Friendly Experience  
-Modern, simple interface with quick-start templates and optional dark mode.
+Full detail in **[progress.md](progress.md)**.
 
 ---
 
-## 🛡 Development Principles
+## 🧩 What works today
 
-While this repo doesn’t include the application code itself, SiLKiE is being built with:
+**Inventory**
+Track gear down to the item, with nested sub-items, bulk actions, filtering and
+search. A guided wizard walks you through building a kit from scratch by
+category rather than staring at an empty list.
 
-- Clean, maintainable structure  
-- Consistent testing and quality checks  
-- A focus on performance and good user experience  
+**SOPs & checklists**
+Build structured procedures — sections and items — that pull from your
+inventory, then export a clean PDF for printing or sharing.
+
+**Events**
+A shared calendar with regional filtering, plus RSVPs and a personal view of
+what you're organising and attending.
+
+**Community**
+Find people to train with, connect, and message them one-to-one or in group
+chats. Groups get shared inventories. There's a friends system, a following
+feed, notifications, and moderation tooling behind it.
+
+**Accounts & billing**
+Email or Google sign-in, profile and avatar management, password reset, and
+subscription handling.
 
 ---
 
-## ✨ Purpose of This Repo
+## 🛠 How it's built
 
-This is a **public progress tracker**, not the source code.  
-It’s meant to:
+React 19, TypeScript, Vite and Tailwind on the front. Django 5 and Django REST
+Framework on the back, PostgreSQL in production. Media on Cloudflare R2,
+payments through Stripe, the site served from Cloudflare.
 
-- Keep friends updated  
-- Share milestones  
-- Show how the project is evolving over time  
-- Provide transparency without exposing private design details  
+Every push runs a CI pipeline that lints and tests both halves. There is also an
+autonomous build harness that works overnight on queued tasks and is not
+permitted to merge anything that fails the same gates — you can see its output
+on my [profile page](https://github.com/CGGrimsley).
 
-If you’re following the SiLKiE project, this is the best place to see what’s new.
+---
 
+## 🗺 What's next
+
+Near-term work is listed in [progress.md](progress.md). The headline items:
+
+- Expanded account self-service
+- Route-level code splitting to cut first-load weight
+- Broader end-to-end test coverage
+- Continued mobile polish
+
+---
+
+## ✨ About this repo
+
+No source code lives here — just milestones and status, updated as things ship.
+If you're following SiLKiE, this and [silkie.io](https://silkie.io) are the
+places to look.
+
+Questions or beta access: **[support@silkie.io](mailto:support@silkie.io)**
+
+[Instagram](https://www.instagram.com/silkie.io/) · [X](https://x.com/Silkieio)
